@@ -1,29 +1,33 @@
 ---
-title: Redis Labs Enterprise for PCF
+title: Redis Enterprise Pack for PCF
 owner: Partners
 ---
 
-**This topic should begin with a brief description of your product. See below for an example.**
+Redis<sup>e</sup> Pack clusters are enterprise grade, highly available and scalable Redis clusters with substantially lower operational overhead than any other Redis deployment method.
 
-This documentation describes the Redis Labs Enterprise Cluster (RLEC) Service Broker for Pivotal Cloud Foundry (PCF). 
-The RLEC Service Broker registers a service broker on PCF and exposes its service plans on the Marketplace. 
-Developers can provision Redis databases by creating instances of the service plans using Apps Manager or the 
-Cloud Foundry Command Line Interface (cf CLI).
+Redis<sup>e</sup> Pack extends open source Redis and delivers tangible benefits of stable high performance, zero-downtime linear scaling and hassle-free true high availability, with significant operational savings.
+
+This documentation describes Redis<sup>e</sup> Pack for Pivotal Cloud Foundry (PCF). 
+Redis<sup>e</sup> Pack for PCF exposes its service plans on the Marketplace. 
+Developers can provision highly availabe and scalable Redis databases by creating instances of the service plans using Apps Manager or the Cloud Foundry Command Line Interface (cf CLI).
 
 ## <a id='overview'></a>Overview
 
-**The overview should provide a description of the product's key features.**
+Redis<sup>e</sup> Pack is an enterprise-grade cluster that acts as a container for managing and running multiple Redis databases in a highly available and scalable manner.
 
-Redis Labs Enterprise for PCF includes the following key features:
+The Redis<sup>e</sup> Pack Service Broker exposes four service plans on the Marketplace. The service plans correspond to the following preconfigured database plans:
 
-* Feature one.
-* Feature two.
-* Feature three.
+* Simple Redis database: a single master shard.
+* Highly-available Redis database: master/slave shards or master/multi-slave shards.
+* Redis clustered database: multiple master shards.
+* Highly-available Redis clustered database: multiple master shards each with its own slave shard, or multiple master/multi-slave shards.
+
+For more specific information, see the [Redis<sup>e</sup> Pack documentation](https://redislabs.com/redis-enterprise-documentation/overview/).
 
 ## <a id="snapshot"></a>Product Snapshot
 
 <dl>
-<dt>Redis Labs Enterprise for PCF details:</dt>
+<dt>Redis<sup>e</sup> Pack for PCF details:</dt>
 <dd><strong>Version</strong>: vYOUR-VERSION-NUMBER </dd>
 <dd><strong>Release date</strong>: YOUR-RELEASE-DATE (Ex: August 1, 2016)</dd>
 <dd><strong>Software component version</strong>: vYOUR-SOFTWARE-COMPONENT-VERSION-NUMBER</dd>
@@ -36,25 +40,21 @@ Redis Labs Enterprise for PCF includes the following key features:
 
 ## <a id="reqs"></a>Requirements
 
-**Provide any general or specific requirements, prerequisites, or dependencies here. 
-A general requirement might be something like, "An AppDynamics account." 
-A specific requirement might be something like, "Packaging Dependencies for Offline Buildpacks."**
-
-Redis Labs Enterprise for PCF has the following requirements:
-
-+ PREREQUISITE-1
-
-+ PREREQUISITE-2
+Redis<sup>e</sup> Pack Service for Pivotal Cloud Foundry requires a valid license from Redis Labs for the Redis<sup>e</sup> Pack cluster. Otherwise you receive a 30 day trial license by default.
 
 ## <a id="limitations"></a>Limitations
 
-**List any known limitations.**
+At this time, Redis<sup>e</sup> Pack Service for Pivotal Cloud Foundry is limited to one cluster per deployment.
 
 ## <a id="feedback"></a>Feedback
 
-Please provide any bugs, feature requests, or questions to the 
-[Pivotal Cloud Foundry Feedback](mailto:pivotal-cf-feedback@pivotal.io) list or send an email to YOUR-SUPPORT-EMAIL.
+Please provide any bugs, feature requests, or questions to the [Pivotal Cloud Foundry Feedback](mailto:pivotal-cf-feedback@pivotal.io) list or send an email to support@redislabs.com.
+
+## <a id='release-notes'></a>Release Notes
+
+This is the first version of the Redis<sup>e</sup> Pack on Pivotal.
 
 ## <a id='license'></a>License
 
-**List any license information here.**
+Customers interested in using Redis<sup>e</sup> Pack can download and install it from [Redis Labs](https://redislabs.com/redis-enterprise) under the trial license limitations. To obtain a production license and support, contact a Redis Labs sales representative at sales@redislabs.com.
+
