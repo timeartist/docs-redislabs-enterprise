@@ -22,5 +22,12 @@ This topic describes how to install and configure Redis<sup>e</sup> Pack for Piv
 1. Return to the Ops Manager by clicking on **Installation Dashboard**<br />![Import button](./images/pcf_post-config-click.png)
 1. Click **Apply Changes** to install the Redis<sup>e</sup> Pack Service Broker.<br />![Import button](./images/post-install-dashboard.png)
 1. Ops Manager will run through its process to install everything for you.
+1. Once Ops Manager completes the install, navigate to rpadmin.YOURAPPSDOMAIN to access the DB management GUI.
+    1. Login with the username and password you created in ops manager
+    1. If you have a license file from Redis Labs, you can apply it in the Settings window.
+1. To have full HA, you must setup an NS record in your local DNS to point to the Redis<sup>e</sup> cluster with the Cluster Name FQDN you setup in the previous step.
+    * Details on how to do this can be found [here](https://redislabs.com/redis-enterprise-documentation/initial-setup-creating-a-new-cluster/how-to-set-the-cluster-name-fqdn/)
+    * The IP Addresses that you'll use to do this can be found in the RPAdmin UI or from the tile's resource config. 
+
 
 For more information about Redis<sup>e</sup> Pack in general, please [see their documentation site](https://redislabs.com/redis-enterprise-documentation/overview/)
